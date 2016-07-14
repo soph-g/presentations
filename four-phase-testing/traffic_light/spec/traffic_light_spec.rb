@@ -19,8 +19,8 @@ describe TrafficLight do
   end
 
   describe '#next' do
-    it 'responds to next' do
-      expect(subject.next).to(eq(true))
+    it 'is set to :wait by default' do
+      expect(subject.next).to(eq(:wait))
     end
   end
 

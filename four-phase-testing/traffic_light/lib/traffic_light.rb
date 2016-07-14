@@ -1,13 +1,10 @@
 class TrafficLight
   #the awesome code goes here
-  attr_reader :state
+  attr_reader :state, :next
 
-  def initialize(state = :stop)
-    @state = :stop
-  end
-
-  def next
-    true
+  def initialize(state = :stop, next_state = :wait)
+    @state = state
+    @next = next_state
   end
 
 end
